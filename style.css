@@ -129,7 +129,7 @@ aside ul {
 }
 
 main img{
-  max-width: 350px;
+  max-width: 35rem;
   display: block;
   margin: auto;
 }
@@ -154,3 +154,4 @@ footer a {color: var(--cor04);
 footer a:hover {
   text-decoration: underline;
 }
+
