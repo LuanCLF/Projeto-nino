@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap");
+
+:root {
+  --cor01: #1d594e;
+  --cor02: #f2cb05;
+  --cor03: #f29f05;
+  --cor04: #f28705;
+  --cor05: #f23030;
+  --cor0P: #1d662f;
+
+  --padrao-fonte: Verdana, Arial, Helvetica, sans-serif;
+  --destaque-fonte: "Bebas Neue", cursive;
+  --cachorrao-fonte: "Underdog", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--padrao-fonte);
+  font-size: 4.6rem;
+
+  background-color: var(--cor01);
+}
+
+header {
+  background: linear-gradient(var(--cor03), var(--cor04));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  font-family: var(--destaque-fonte);
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+span,
+h1,
+h2,
+h3 {
+  color: var(--cor01);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+h1 {
+  grid-area: h;
+  font-size: 3rem;
+  margin: 2rem 0 0 16rem;
+  height: 10rem;
+}
+
+p {
+  text-indent: 2rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: var(--cor0P);
+  line-height: 2.3rem;
+}
+
+header span,
+p {
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+  align-self: flex-start;
+  gap: 1.5rem;
+
+  margin: 1rem 0 1rem 2rem;
+
+  font-size: 2rem;
+}
+
+a {
+  background-color: var(--cor02);
+  color: #1d594e;
+
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+a:hover {
+  background-color: #1d594e;
+  color: var(--cor02);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+main {
+  background-color: var(--cor03);
+
+  width: 80rem;
+  margin: auto;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "artic1 ."
+    "artic1 sect"
+    "artic1 ."
+    "artic2 artic2";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+@media (max-width: 800px) {
+  main {
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+      "h h"
+      "artic1 ."
+      "artic1 ."
+      "sect ."
+      "artic2 artic2";
+
+    grid-template-columns: 1fr;
+  }
+  section {
+    margin: auto;
+  }
+
+video {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+#divDaImg {
+  gap: 1rem;
+}
+}
+
+#artc1 {
+  grid-area: artic1;
+}
+
+video {
+  height: 35rem;
+  width: 30rem;
+}
+
+section {
+  grid-area: sect;
+
+  background-color: var(--cor04);
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  line-height: 2.3rem;
+
+  height: 40rem;
+}
+
+ul {
+  list-style-position: inside;
+  font-size: 2rem;
+}
+
+#ulA {
+  list-style-type: "🌭";
+}
+
+#ulB {
+  list-style-type: "💎";
+}
+
+#artc2 {
+  grid-area: artic2;
+}
+
+#divDaImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  padding-left: 3rem;
+
+  min-height: 10rem;
+  max-height: 70rem;
+}
+
+button {
+  align-self: stretch;
+  margin: 50px 10rem 0 0;
+
+  width: 10rem;
+  height: 11rem;
+  background: linear-gradient(
+    90deg,
+    var(--cor02) 0%,
+    var(--cor03) 40%,
+    var(--cor04) 100%
+  );
+
+  border-radius: 1rem;
+}
+
+#iconIMG {
+  font-size: 7rem;
+  color: #1d594e;
+}
+
+#iconIMG:hover {
+  transform: rotate(360deg);
+  transition-duration: 0.9s;
+}
+
+footer {
+  background: linear-gradient(var(--cor04), var(--cor03));
+  height: 80px;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 3rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+footer a {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
