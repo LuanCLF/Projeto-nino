@@ -63,7 +63,7 @@ h2 {
 h1 {
   grid-area: h;
   font-size: 3rem;
-  margin: 2rem 0 0 16rem;
+  margin: 2rem auto;
   height: 10rem;
 }
 
@@ -129,8 +129,9 @@ main {
 
 @media (max-width: 800px) {
   main {
-    width: 100vw;
+    width: 50rem;
     display: grid;
+    padding: 0;
     grid-template-areas:
       "h h"
       "artic1 ."
@@ -142,6 +143,10 @@ main {
   }
   section {
     margin: auto;
+  }
+
+  footer p {
+    margin: 0;
   }
 
 video {
@@ -199,7 +204,6 @@ ul {
   padding-left: 3rem;
 
   min-height: 10rem;
-  max-height: 70rem;
 }
 
 button {
@@ -230,7 +234,6 @@ button {
 
 footer {
   background: linear-gradient(var(--cor04), var(--cor03));
-  height: 80px;
   padding: 1rem;
 
   display: flex;
