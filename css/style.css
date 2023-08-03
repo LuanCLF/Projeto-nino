@@ -149,13 +149,13 @@ main {
     margin: 0;
   }
 
-video {
-  margin-left: 50%;
-  transform: translate(-50%);
-}
-#divDaImg {
-  gap: 1rem;
-}
+  video {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  #divDaImg {
+    gap: 1rem;
+  }
 }
 
 #artc1 {
@@ -220,6 +220,17 @@ button {
   );
 
   border-radius: 1rem;
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--cor01);
+}
+
+@media (max-width: 800px) {
+  button {
+    width: 5rem;
+    height: 10rem;
+    font-size: 2rem;
+  }
 }
 
 #iconIMG {
